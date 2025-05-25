@@ -4,12 +4,11 @@ import java.util.List;
 import org.springframework.web.bind.annotation.*;
 import com.gestonclase.Gestion.clase.DTO.*;
 import com.gestonclase.Gestion.clase.Service.ClaseService;
-import jakarta.persistence.*;
-import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
-@Entity
-@Table(name = "clases")
-@Data
+@RestController
+@RequiredArgsConstructor
+@RequestMapping("/clases")
 public class ClaseController {
  private final ClaseService claseService;
 
