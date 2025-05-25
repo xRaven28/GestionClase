@@ -10,7 +10,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @RequestMapping("/clases")
 public class ClaseController {
- private final ClaseService claseService;
+    private final ClaseService claseService;
 
     @PostMapping
     public ClaseDTO crear(@RequestBody CrearClaseDTO dto) {
